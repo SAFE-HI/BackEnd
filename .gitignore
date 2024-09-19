@@ -1,0 +1,12 @@
+# Node.js 관련
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# 로그 파일들
+*.log
+
+# 빌드 출력 폴더
+dist/
+build/
