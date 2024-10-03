@@ -95,6 +95,7 @@ Uniform Resource Identifier)](https://en.wikipedia.org/wiki/Uniform_Resource_Ide
    ```
         http://127.0.0.1:3000/ai/runlocalfunc
    ```
+![image](https://github.com/user-attachments/assets/6a125d97-ed9f-4092-9b26-fc10fb394dbe)
 
 
 
