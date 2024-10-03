@@ -102,3 +102,5 @@ Uniform Resource Identifier)](https://en.wikipedia.org/wiki/Uniform_Resource_Ide
 ## 앞으로 추가할 기능
 - 각 모듈별로 함수들을 추가하여 AI, DB, Remote Data와의 통신을 강화할 예정입니다.
 - 클라이언트와의 상호작용을 개선하기 위해 추가적인 테스트 페이지 및 응답 처리 로직을 개선할 계획입니다.
+
+  참고) SAFE-HI slack과 연결되어있습니다
