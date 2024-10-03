@@ -7,32 +7,23 @@ const port = 3000;
 // CORS 미들웨어 사용 (모든 출처에 대해 허용)
 app.use(cors());
 
-// 모듈 불러오기
-const aiModule = require('./AI/ai_api');
-const dbModule = require('./DB/db_api');
-const remoteDataModule = require('./REMOTEDATA/remote_data_api');
+// 라우팅 파일 불러오기
+const aiRoutes = require('./URIProcess/AI_URI_Process');
+const dbRoutes = require('./URIProcess/DB_URI_Process');
+const remoteDataRoutes = require('./URIProcess/RD_URI_Process');
 
 ///////////////////////////////////////////////
 //////////////////// 라우팅 ////////////////////
 ///////////////////////////////////////////////
 
-// AI Routing
-app.get('/ai', (req, res) => {
-    aiModule.runAiFunction();
-    res.send('AI module executed');
-});
+// AI 라우팅
+app.use('/ai', aiRoutes);
 
-// AI Routing
-app.get('/db', (req, res) => {
-    dbModule.runDbFunction();
-    res.send('DB module executed');
-});
+// DB 라우팅
+app.use('/db', dbRoutes);
 
-// RemoteData Routing
-app.get('/remotedata', (req, res) => {
-    remoteDataModule.runRemoteDataFunction();
-    res.send('Remote Data module executed');
-});
+// Remote Data 라우팅
+app.use('/remotedata', remoteDataRoutes);
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
