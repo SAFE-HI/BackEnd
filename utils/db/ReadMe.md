@@ -198,6 +198,10 @@ CREATE TABLE Appointments (
 );
 ```
 
+![alt text](images/image_done_process.png)
+
+done.
+
 ### DB BackUp - 파일로 내보내기
 
 이 DB를 파일로 저장하고, 다른 컴퓨터에서도 쉽게 세팅하려면 아래 절차를 따르면 됩니다:

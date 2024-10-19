@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const dbModule = require('../DB/db_api');
 
+router.use(express.json());
+
 // DB 모듈 라우팅
 router.get('/', (req, res) => {
     dbModule.runDbFunction();
