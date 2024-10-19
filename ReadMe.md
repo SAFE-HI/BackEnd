@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/b674fbfc-8ab6-4ef4-9ec0-37586ac70218)
 
 # 프로젝트 개요
 
