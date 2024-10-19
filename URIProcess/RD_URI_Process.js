@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const remoteDataModule = require('../REMOTEDATA/remote_data_api');
+const remoteDataModule = require('../REMOTEDATA/rd_api');
 
 // Remote Data 모듈 라우팅
 router.get('/', (req, res) => {
